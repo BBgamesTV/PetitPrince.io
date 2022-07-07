@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Petit Prince Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+        <a href="#" class="logo">Petit Prince</a>
+        <ul>
+            <li><a href="#" class="active">>Home</a></1i>
+            <li><a href="about.html">>About</a></1i>
+            <li><a href="https://github.com/BBgamesTV?tab=repositories">>Works</a></1i>
+        </ul>
+        </header>
+
+        <section>
+            <img src="assets/stars2.jpg" id="stars">
+            <h2 id="text">Bienvenue 👋</h2>
+            <a href="#sec" id="btn">Découvrir 🔍</a>   
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>>Home 🏡</h2>
+            <a href="https://discord.com/invite/a5B4tzEhBT" id="btn">Mon Discord 🦕</a>
+            <a href="https://github.com/BBgamesTV?tab=repositories" id="btn">Mon Github 💻</a>   
+            <p>Create By Petit Prince#3575 © Spaceteam - 2022</p>
+        </div>
+
+        <script>
+            let bg = document.getElementById('stars')
+            let text = document.getElementById('text')
+            let button = document.getElementById('btn')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                text.style.marginRight = value * 1.2 + 'px';
+                button.style.marginLeft = value * 1.2 + 'px';
+                bg.style.top = value * 0.75 + 'px';
+            })
+        </script>
+    </body>
+</html>
