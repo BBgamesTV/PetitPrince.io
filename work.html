@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Petit Prince Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+    </head>
+
+    <body>
+        <header>
+        <a href="#" class="logo">Petit Prince</a>
+        <ul>
+            <li><a href="index.html" >>Home</a></1i>
+            <li><a href="about.html">>About</a></1i>
+            <li><a href="#" class="active">>Works</a></1i>
+        </ul>
+        </header>
+
+        <section id="menu">
+            <img src="assets/Cali/fond.png" id="bg">
+            <img src="assets/Cali/foret.png" id="foret">
+            <img src="assets/Cali/tour.png" id="tour">
+            <img src="assets/Cali/oiseaux.png" id="oiseaux">
+            <img src="assets/Cali/lune.png" id="lune">
+            <img src="assets/Cali/petitprince.png" id="prince">
+            
+            <h2 id="text">Mes Travaux 📁</h2>
+            <a href="#sec" id="btn">Découvrir 🔍</a>
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>>Gallerie 🎨</h2>
+            
+            <h2> <br>Dessins fait par Cali :</h2>
+            <br> <br>
+            <a href="assets/Cali/portfolio/clairiere.png" id="dl1">Download 1590x1616 🐛</a>
+            <img src="assets/Cali/portfolio/clairiere.png" stylealign="center" /> 
+            <br>
+            <a href="assets/Cali/portfolio/dinopark.png" id="dl2">Download 1620x1721 🦖 </a> 
+            <img src="assets/Cali/portfolio/dinopark.png" stylealign="center" />
+            
+            <p>Create By Petit Prince © Spaceteam - 2022</p>
+            <a href="https://discord.com/invite/a5B4tzEhBT" id="btn">Mon Discord 🦕</a>
+            <a href="https://github.com/BBgamesTV?tab=repositories" id="btn">Mon Github 💻</a>
+            <a href="#menu" id="btn">Haut de la page ⏫</a>
+
+        </div>
+
+        <script>
+            let bg = document.getElementById('bg')
+            let foret = document.getElementById('foret')
+            let tour = document.getElementById('tour')
+            let oiseaux = document.getElementById('oiseaux')
+            let lune = document.getElementById('lune')
+            let prince = document.getElementById('prince')
+            let text = document.getElementById('text')
+            let button = document.getElementById('btn')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                
+                text.style.marginRight = value * 1.5 + 'px';
+                button.style.marginLeft = value * 1.2 + 'px';
+                bg.style.top = value * 0.1 + 'px';
+                foret.style.top = value * 0.1 + 'px';
+                tour.style.top = value * 0.80 + 'px';
+                lune.style.top = value * 0.99 + 'px';
+                lune.style.left = value * 0.30 + 'px';
+                prince.style.left = value * 0.28 + 'px';
+                prince.style.top = value * 0.99 + 'px';
+                oiseaux.style.left = value * 0.25 + 'px';
+                oiseaux.style.top = value * 0.60 + 'px';
+            })
+        </script>
+    </body>
+</html>
