@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Petit Prince Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+    </head>
+
+    <body>
+        <header>
+        <a href="#" class="logo">Petit Prince</a>
+        <ul>
+            <li><a href="#" class="active">>Home</a></1i>
+            <li><a href="about.html">>About</a></1i>
+            <li><a href="work.html">>Works</a></1i>
+        </ul>
+        </header>
+
+        <section id="menu">
+            <img src="assets/stars2.jpg" id="stars">
+            <!--<h2 id="text">Bienvenue 👋</h2>-->
+            <h2 id="text2"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVC7VSvKey8GjyytZim1Y4j3EZxKg1Dp9Ps-dVR04XBSKB5g/viewform?embedded=true" width="640" height="628" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe></h2> 
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>>Home 🏡</h2>
+            <p style="font-size: 1.85em;">Catégories : </p> 
+            
+            <ul>
+                <br>
+                <li><a href="about.html">>About</a></1i>
+                <p>Un a propos de moi, je me presente...</p>
+                <br>
+                <li><a href="work.html">>Works</a></1i>
+                <p>Portfolio et Gallerie de Dessins/Images</p>
+                <br>
+            </ul>
+            
+            <p>Create By Petit Prince © Spaceteam - 2022</p>
+            <a href="https://discord.com/invite/a5B4tzEhBT" id="btn">Mon Discord 🦕</a>
+            <a href="https://github.com/BBgamesTV?tab=repositories" id="btn">Mon Github 💻</a>
+            <a href="#menu" id="btn">Haut de la page ⏫</a>
+            
+        </div>
+
+        <script>
+            let bg = document.getElementById('stars')
+            let text = document.getElementById('text')
+            let text2 = document.getElementById('text2')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                text.style.marginTop = value * 0.01 + 'px';
+                bg.style.top = value * 0.8 + 'px';
+                text2.style.marginTop = value * 1 +'px';
+            })
+        </script>
+    </body>
+</html>
