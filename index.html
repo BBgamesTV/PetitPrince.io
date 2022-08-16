@@ -11,8 +11,8 @@
         <a href="#" class="logo">Petit Prince</a>
         <ul>
             <li><a href="#" class="active">>Home</a></1i>
-            <li><a href="about.html">>About</a></1i>
-            <li><a href="work.html">>Works</a></1i>
+            <li id="list"><a href="about.html">>About</a></1i>
+            <li id="list2"><a href="work.html">>Works</a></1i>
         </ul>
         </header>
 
@@ -24,18 +24,20 @@
 
         <div class="sec" id="sec">
             <h2>>Home 🏡</h2>
-            <p style="font-size: 1.85em;">Catégories : </p> 
+            <p style="font-size: 1.85em;">Catégories : (Pas diponible sur télephone🤧)</p> 
             
             <ul>
                 <br>
-                <li><a href="about.html">>About</a></1i>
+                <li id="list3"><a href="about.html">>About</a></1i>
                 <p>Un a propos de moi, je me presente...</p>
                 <br>
-                <li><a href="work.html">>Works</a></1i>
+                <li id="list4"><a href="work.html">>Works</a></1i>
                 <p>Portfolio et Gallerie de Dessins/Images</p>
                 <br>
             </ul>
             
+            <h3>ATTENTION 🚧L'AFFICHAGE TELEPHONE DU SITE : EN COURS DE DEVELOPPEMENT...🚧</h3>
+            <br>
             <p>Create By Petit Prince © Spaceteam - 2022</p>
             <a href="https://discord.com/invite/a5B4tzEhBT" id="btn">Mon Discord 🦕</a>
             <a href="https://github.com/BBgamesTV?tab=repositories" id="btn">Mon Github 💻</a>
@@ -44,6 +46,21 @@
         </div>
 
         <script>
+
+            let head = document.getElementById('list')
+            let head2 = document.getElementById('list2')
+            let menu = document.getElementById('list3')
+            let menu2 = document.getElementById('list4')
+
+
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+             head.style.opacity = 0 +'%';
+             head2.style.opacity = 0 +'%';
+             menu.style.opacity = 0 +'%';
+             menu2.style.opacity = 0 +'%';
+            }
+
             let bg = document.getElementById('stars')
             let text = document.getElementById('text')
             let text2 = document.getElementById('text2')
